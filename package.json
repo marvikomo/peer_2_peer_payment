@@ -1,0 +1,41 @@
+{
+  "name": "peer_2_peer_payment_test",
+  "version": "1.0.0",
+  "description": "making payment easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marvikomo/peer_2_peer_payment.git"
+  },
+  "author": "marv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marvikomo/peer_2_peer_payment/issues"
+  },
+  "homepage": "https://github.com/marvikomo/peer_2_peer_payment#readme",
+  "dependencies": {
+    "@types/shortid": "0.0.29",
+    "shortid": "^2.2.16",
+    "ts-node": "^10.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.0",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
