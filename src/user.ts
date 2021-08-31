@@ -7,16 +7,16 @@ export class User extends Wallet {
 
   constructor() {
     super();
-    if (User._instace) {
+    if (User._instance) {
       throw new Error("cannot create a new instace of this class");
     }
-    User._instace = this;
+    User._instance = this;
   }
 
-  private static _instace: User = new User();
+  private static _instance: User = new User();
 
   public static get instance(): User {
-    return User._instace;
+    return User._instance;
   }
 
   createUser(data: Omit<IUser, "id" | "account_no">): IUser {
