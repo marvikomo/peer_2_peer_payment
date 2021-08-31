@@ -7,7 +7,7 @@
 $ npm i 
 
 # install jest globally
-$ npm i -g
+$ npm i jest -g
 
 # run test
 $ npm test
